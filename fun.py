@@ -10,7 +10,20 @@ def dog_years():
     The dog's age in dog's years is 73
     ```
     """
-
+    
+    h_age = int(input("Enter dogs age:\n"))
+    d_age_2 = h_age * 5.25
+    d_age_after = ((h_age - 2) * 4) + 21
+    
+    if h_age <= 2:
+        print(f"The dog's age in dog's years is {d_age_2}")
+    
+    elif h_age > 2 and h_age <= 20:
+        print(f"The dog's age in dog's years is {d_age_after}")
+    else:
+        print("Your dog is either not born yet or it is dead :( ")
+        
+    
     #enter your code here
 
 def fizzbuzz(num):
@@ -53,3 +66,9 @@ def cube_sum(number):
     """
     
     #enter your code here
+    
+def main():
+    print(dog_years())
+    
+if __name__ == "__main__":
+    main()
