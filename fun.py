@@ -40,6 +40,25 @@ def fizzbuzz(num):
     #enter your code here
 
     
+    # for index in range(1,num):
+        
+    #     if index % 3 == 0 and index % 5 == 0:
+    #         index = "FizzBuzz"
+    #     print(index)
+        
+    #     if index % 5 == 0:
+    #         index = "Buzz"
+    #     print(index)
+        
+            
+    #     if index % 3 == 0:
+    #        index = "Fizz"
+    #     print(index)
+        
+    
+          
+
+    
 
 def word_lengths(sentence):
     """
@@ -54,6 +73,22 @@ def word_lengths(sentence):
     """
     
     #enter your code here
+    
+    empty_dict = {}
+    
+    if not isinstance(sentence,str):
+        raise ValueError("Enter string input")
+        
+    else:
+        sentence = sentence.split()
+        for word in sentence:
+            word_length = len(word)
+            
+            empty_dict[word] = word_length
+        print(empty_dict) 
+        return empty_dict   
+    
+        
 
 def cube_sum(number):
     """
@@ -69,6 +104,12 @@ def cube_sum(number):
     
 def main():
     print(dog_years())
+    
+    num = int(input("Enter a number: \n"))
+    print(fizzbuzz(num))
+    
+    sentence = input("Sentence:\n")
+    print(word_lengths(sentence))
     
 if __name__ == "__main__":
     main()
