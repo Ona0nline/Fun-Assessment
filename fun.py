@@ -40,20 +40,20 @@ def fizzbuzz(num):
     #enter your code here
 
     
-    # for index in range(1,num):
+    for index in range(1,num):
         
-    #     if index % 3 == 0 and index % 5 == 0:
-    #         index = "FizzBuzz"
-    #     print(index)
+        if index % 3 == 0 and index % 5 == 0:
+            index = "FizzBuzz"
+        print(index)
         
-    #     if index % 5 == 0:
-    #         index = "Buzz"
-    #     print(index)
+        if index % 5 == 0:
+            index = "Buzz"
+        print(index)
         
             
-    #     if index % 3 == 0:
-    #        index = "Fizz"
-    #     print(index)
+        if index % 3 == 0:
+           index = "Fizz"
+        print(index)
         
     
           
